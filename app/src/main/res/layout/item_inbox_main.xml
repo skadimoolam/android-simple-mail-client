@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/img_sender_img"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/btn_bg"
+        android:layout_margin="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/tv_mail_time"
+        android:text="10:30 AM"
+        android:textColor="#91a5ae"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/img_sender_img"
+        android:layout_marginLeft="60dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="skadimoolam@gmail.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mail_sender"
+            android:paddingBottom="6dp"/>
+
+        <TextView
+            android:paddingBottom="6dp"
+            android:text="Subject Line"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mail_subject"/>
+
+        <TextView
+            android:paddingBottom="6dp"
+            android:text="message short"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_mail_message" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/img_star_message"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_star_border"
+        android:layout_width="26dp"
+        android:layout_height="26dp" />
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="#a7b7be"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,59 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LoginFormStyle">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">.7</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/bg_login_form</item>
+        <item name="android:padding">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <style name="LoginBtnStyle">
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:layout_weight">.5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">attemptLogin</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:text">@string/prompt_sign_in</item>
+    </style>
+
+    <style name="CustEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="EtBgWhiteNoBorder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+        <item name="android:background">@drawable/bg_cust_et</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+</resources>
