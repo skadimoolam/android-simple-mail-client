@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 HttpHelper.postData(UrlHelper.url_login, formData, null, new HttpHelper.OnRequestCompleteListener() {
                     @Override
                     public void OnSuccess(Ason data) {
-                        if (data.get("code").equals("1")) {
+                        if (data.get("code").equals("success")) {
                             sharePrefEditor.putString("user-data", data.toString());
                             sharePrefEditor.putString("user-id", data.get("data.id").toString());
                             sharePrefEditor.apply();

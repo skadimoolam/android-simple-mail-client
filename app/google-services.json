@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "314493973187",
+    "firebase_url": "https://simplemailserver-29b56.firebaseio.com",
+    "project_id": "simplemailserver-29b56",
+    "storage_bucket": "simplemailserver-29b56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314493973187:android:31891fae16f74b48",
+        "android_client_info": {
+          "package_name": "dev.adi.poc.simplemailserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314493973187-32286vj67k3lsmd743io80p4ns7pdkn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGAri6-7buVrDeN3jP2HvkWq4hyHIIZaY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

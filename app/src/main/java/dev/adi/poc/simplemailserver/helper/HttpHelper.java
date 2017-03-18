@@ -55,9 +55,8 @@ public class HttpHelper {
                         e.printStackTrace();
                         listener.OnError(e.getMessage());
                     } else {
-                        Ason data = new Ason(response.asString());
-                        Log.i(TAG, response.asString());
-                        if (data.get("code").equals("1") && data.get("code") != "") {
+                        Ason data = new Ason(response.asString());   Log.i(TAG, response.asString());
+                        if (data.get("code").equals("success") && data.get("code") != "") {
                             listener.OnSuccess(data);
                         } else {
                             listener.OnError(data.get("message").toString());

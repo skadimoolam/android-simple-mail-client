@@ -64,8 +64,13 @@ public class InboxListAdapter extends RecyclerView.Adapter<InboxListAdapter.Inbo
                 tvMailMessage.setText(msgFormated);
             }
 
+            if (item.subject.length() > 20) {
+                tvMailSubject.setText(item.subject.subSequence(0, 20) + "  ...");
+            } else {
+                tvMailSubject.setText(item.subject);
+            }
+
             tvMailSender.setText(item.userEmail);
-            tvMailSubject.setText(item.subject);
             tvMailTime.setText(item.createDate.substring(11, 16));
 
             parent.setOnLongClickListener(new View.OnLongClickListener() {

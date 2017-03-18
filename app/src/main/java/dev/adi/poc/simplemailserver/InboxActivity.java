@@ -12,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.afollestad.ason.Ason;
@@ -78,12 +79,15 @@ public class InboxActivity extends AppCompatActivity {
             HttpHelper.postData(UrlHelper.url_inbox_view, formData, null, new HttpHelper.OnRequestCompleteListener() {
                 @Override
                 public void OnSuccess(Ason data) {
-                    AsonArray<MailItem> asonItems = new AsonArray<>(data.get("data").toString());
-//                    mailItems = asonItems.deserializeList(MailItem.class);
-//                    adapter.notifyDataSetChanged();
-                    List<MailItem> items = asonItems.deserializeList(MailItem.class);
-                    Collections.reverse(items);
-                    inboxList.setAdapter(new InboxListAdapter(InboxActivity.this, items));
+                    try {
+                        AsonArray<MailItem> asonItems = new AsonArray<>(data.get("data").toString());
+                        List<MailItem> items = asonItems.deserializeList(MailItem.class);
+                        Collections.reverse(items);
+                        inboxList.setAdapter(new InboxListAdapter(InboxActivity.this, items));
+                    } catch (Exception e) {
+                        findViewById(R.id.tv_prompt_no_email).setVisibility(View.VISIBLE);
+                        inboxList.setVisibility(View.GONE);
+                    }
 
                     progressDialog.dismiss();
                     swipeRefreshLayout.setRefreshing(false);

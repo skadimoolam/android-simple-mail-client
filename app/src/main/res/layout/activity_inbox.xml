@@ -20,4 +20,16 @@
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
+
+    <TextView
+        android:id="@+id/tv_prompt_no_email"
+        android:visibility="gone"
+        android:padding="20dp"
+        android:text="Sorry, no emails found!"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
 </RelativeLayout>
